@@ -8,9 +8,11 @@ void lancaDado(int n){
 
     int dado[6]={0}, i, face;
 
+    srand(time(0));
+
     for(i=0 ; i<n ; i++){
-        srand(time(0));
-        face= rand()%5;
+
+        face= rand()%6;
 
         cout<<"Face "<<face+1<<endl;
         dado[face]++;
